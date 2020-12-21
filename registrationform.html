@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <form name="f1" action="#" onsubmit="return validate()">
+      <div class="form">
+        <div class="generalpart">
+          <div class="general">General information</div>
+          <select class="title" id="title">
+            <option class="item">Title</option>
+            <option class="item">Secratery</option>
+            <option class="item">Reporter</option>
+            <option class="item">Businessmen</option>
+          </select>
+          <span id="error3"></span>
+        <div class="inputvalues">
+          <div><input type="name2"  id="fname" placeholder="First Name"   
+            onkeypress='return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))'/></div>
+        <div><input type="name2" id="lname" placeholder="Last Name" maxlength="15"
+          onkeypress='return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))'/></div>
+           
+          </div>
+        <span id="error1"></span>
+        <span id="error2" ></span>
+           <select class="Position" id="position">
+            <option class="item">Position</option>
+            <option class="item">Director</option>
+            <option class="item">Manager</option>
+            <option class="item">Employee</option>
+          </select>
+          <span id="error4"></span>
+          <div><input type="name" id="company" placeholder="Company" style="text-transform: capitalize;"
+            onkeypress='return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))'/></div>
+          <span id="error5"></span>
+          <div>
+            <input type="name1" id="business" placeholder="Business Arena" maxlength="10"/>
+            
+            <select class="Employees">
+              <option class="item">Employees</option>
+              <option class="item">trainee</option>
+              <option class="item">Collague</option>
+              <option class="item">Assosiate</option>
+            </select>
+          </div>
+          <span id="error6"></span>
+        </div>
+          <div class="contactpart">
+            <div class="contact">Contact Details</div>
+            <div><input type="name3" id="street" placeholder="Street + Nr"   minlength="10" pattern="," 
+              onkeypress='return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 44))' /></div>
+              <span id="error7"></span>
+            <div><input type="name3" id="add" placeholder="Additional Information" maxlength="30"/></div>
+            <span id="error8"></span>
+            <div class="inputvalues">
+            <div><input type="name4" id="zip" placeholder="Zip Code" maxlength="6"/></div>
+            
+          <select class="Place" id="place">
+              <option class="item">Place</option>
+              <option class="item">Street</option>
+              <option class="item">District</option>
+              <option class="item">City</option>
+            </select>
+            </div>
+            <span id="error9"></span>
+            <span id="error10"></span>
+          <select class="Country" id="country">
+              <option class="item">Country</option>
+              <option class="item">Vietnam</option>
+              <option class="item">Malaysia</option>
+              <option class="item">India</option>
+            </select>
+            <span id="error11"></span>
+            <div class="inputvalues">
+             
+            <div><input type="name4" id="code" placeholder="Code +" maxlength="3"
+              onkeypress='return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode == 43))'/></div>
+           <div><input type="name4" id="number" placeholder="Phone Number" 
+            onkeypress='return ((event.charCode >= 48 && event.charCode <= 57))'/></div>
+          </div>
+          <span id="error12"></span>
+          <span id="error13"></span>
+          <div><input type="name3" id="email" placeholder="Your Email" /></div>
+          <span id="error14"></span>
+          
+        <div class="link"><input type="checkbox" id="box"> <span>I do accept the <a href="">Terms and Conditions</a> of your site.</span></div>
+        <span id="error15"></span>
+        <input type="submit" value="Register Badge" class="button"/>    
+           <div class="popup"> <div class="box">Succesful Register!</div>
+        <div class="close"> Close</div>
+        <script src="form.js"></script>
+      </div>
+      </div>
+    </form>
+  </body>
+</html>
